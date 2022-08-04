@@ -1,0 +1,49 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<div class="container IndexDiv">
+    <div class="row">
+    <div class="col-3 container CenteredContainer text-center">
+        <section>
+            <form id="account" method="post">
+                <h4 id="form-title">سجل دخولك</h4>
+                <hr />
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group "> 
+                    <h5 >اسم المستخدم / الايميل</h5>
+                    <input asp-for="Input.Email" class="form-control " placeholder="Email" aria-required="true"/>   
+                </div>
+                <h5 class="mt-1 ">كلمة السر</h5>
+                <div class="form-group">
+                    <input asp-for="Input.Password" class="form-control" placeholder="Password" autocomplete="current-password" placeholder="Password" aria-required="true" />
+                </div>
+                <div>
+                    <div class="checkbox mt-2">
+                        <label asp-for="Input.RememberMe" class="form-label">
+                            <input class="form-check-input m-2" asp-for="Input.RememberMe" />
+                            @Html.DisplayNameFor(m => m.Input.RememberMe)
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-danger text-white">تسجيل دخول</button>
+                </div>
+                <div>
+                    <p>
+                        <a id="forgot-password" asp-page="./ForgotPassword">نسيت كلمة السر؟</a>
+                    </p>
+
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+  
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

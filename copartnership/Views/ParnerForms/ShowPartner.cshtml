@@ -1,0 +1,54 @@
+﻿@model IEnumerable<copartnership.Models.ParnerForm>
+
+@{
+    ViewData["Title"] = "ShowPartner";
+}
+
+<h1>ShowPartner</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NationalId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PartnerType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dept)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PartnerDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParnerDuration)
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NationalId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PartnerType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dept)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PartnerDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ParnerDuration)
+            </td>
+
+
+        </tr>
+}
+    </tbody>
+</table>

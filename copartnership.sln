@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "copartnership", "copartnership\copartnership.csproj", "{74251568-1C1C-4C01-A774-E28222DC6EC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74251568-1C1C-4C01-A774-E28222DC6EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74251568-1C1C-4C01-A774-E28222DC6EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74251568-1C1C-4C01-A774-E28222DC6EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74251568-1C1C-4C01-A774-E28222DC6EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {210F1EDF-72EE-4A01-B39C-7013D090CA60}
+	EndGlobalSection
+EndGlobal
